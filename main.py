@@ -26,7 +26,6 @@ sentiment_model = None
 async def load_model():
     global sentiment_model
     logger.info("Loading RoBERTa AI Model (This might take a minute to download on first run)...")
-    e
     sentiment_model = pipeline(
         "sentiment-analysis", 
         model="cardiffnlp/twitter-roberta-base-sentiment-latest",
